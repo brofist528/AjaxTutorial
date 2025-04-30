@@ -6,8 +6,12 @@
     <title>Document</title>
 </head>
 <body>
+    <article>
+
+    </article>
     <input type="button" value="fetch" onclick="fetch('HTML').then(function(response) {response.text().then(function(text) {
         alert(text);
+        document.querySelector('article').innerText = text;
     })})">
 </body>
-</html>
+</html>fetch.html
